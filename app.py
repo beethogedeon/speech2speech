@@ -3,6 +3,7 @@ import streamlit as st
 import requests
 from openai import OpenAI
 from io import BytesIO
+from utils import *
 
 # Initialize OpenAI client
 client = OpenAI(api_key=st.secrets['OPENAI_API_KEY'])
