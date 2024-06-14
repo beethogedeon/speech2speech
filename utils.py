@@ -12,7 +12,7 @@ DENDI_API_URL = "https://api-inference.huggingface.co/models/facebook/mms-tts-dd
 FON_API_URL = "https://api-inference.huggingface.co/models/facebook/mms-tts-fon"
 YOR_API_URL = "https://api-inference.huggingface.co/models/facebook/mms-tts-yor"
 BBA_API_URL = "https://api-inference.huggingface.co/models/facebook/mms-tts-bba"
-headers = {"Authorization": f"Bearer {st.secrets["HF_TOKEN"]}"}
+headers = {"Authorization": f"Bearer {st.secrets['HF_TOKEN']}"}
 
 # Load models at initialization
 def load_models():
