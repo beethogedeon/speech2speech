@@ -20,6 +20,10 @@ dico_lang_2 = {
         'Fongbe':'fon',  'Baatonum':'bba'
     }
 
+if uploaded_file:
+    st.header("Original Audio")
+    st.audio(uploaded_file)
+
 # Select source and target languages
 source_lang = dico_lang_2[st.selectbox("Select source language", ['Français', 'Anglais'])]
 target_lang = dico_lang_2[st.selectbox("Select target language", ['Dendi', 'Baatonum', 'Fongbe', 'Yoruba'])]
